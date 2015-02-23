@@ -1,0 +1,31 @@
+#include<iostream>
+#include<ctime>
+#include<cstdlib>
+using namespace std;
+class dice{
+public:
+
+
+void roll_di (int& a){
+
+a = (rand() % 6) + 1;
+
+}
+};
+
+
+int main()
+{
+
+int d1, d2,sum;
+srand((unsigned)time(0));
+dice rollin;
+rollin.roll_di(d1);
+rollin.roll_di(d2);
+cout << "You rolled a " << d1 << " " << d2 << endl;
+return 0;
+
+}
+
+
+
